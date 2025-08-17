@@ -1,5 +1,6 @@
 from functools import partial
 from typing import Optional
+import json
 
 from tau2.data_model.tasks import Task
 from tau2.domains.banking.data_model import BankingDB
@@ -7,7 +8,7 @@ from tau2.domains.banking.tools import BankingTools
 
 from tau2.domains.banking.user_data_model import BankingUserDB
 from tau2.domains.banking.user_tools import BankingUserTools
-from tau2.domains.banking.utilts import BANKING_DB_PATH, BANKING_POLICY_PATH, BANKING_USER_POLICY_PATH, BANKING_TASK_SET_PATH
+from tau2.domains.banking.utilts import BANKING_DB_PATH, BANKING_POLICY_PATH, BANKING_USER_POLICY_PATH, BANKING_TASK_SET_PATH, BANKING_DATA_DIR
 from tau2.environment.environment import Environment
 from tau2.utils import load_file
 
@@ -86,11 +87,36 @@ def get_environment(
     return env
 
 
+def load_personas() -> dict:
+    """Load persona definitions from user_personas.json"""
+    personas_path = BANKING_DATA_DIR / "user_personas.json"
+    try:
+        with open(personas_path, 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
+
+def inject_persona_data(task_data: dict, personas: dict) -> dict:
+    """Inject persona data into task based on persona key"""
+    if "user_scenario" in task_data and "persona" in task_data["user_scenario"]:
+        persona_key = task_data["user_scenario"]["persona"]
+        if persona_key in personas:
+            task_data["user_scenario"]["persona"] = personas[persona_key]
+    return task_data
+
 def load_tasks(path: str) -> list[Task]:
     tasks = load_file(path)
     if isinstance(tasks, dict) and "tasks" in tasks:
         tasks = tasks["tasks"]
-    return [Task.model_validate(task) for task in tasks]
+    
+    personas = load_personas()
+    
+    processed_tasks = []
+    for task in tasks:
+        task_with_persona = inject_persona_data(task, personas)
+        processed_tasks.append(Task.model_validate(task_with_persona))
+    
+    return processed_tasks
 
 
 def get_environment_main() -> BankingEnvironment:

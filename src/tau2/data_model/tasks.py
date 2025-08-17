@@ -67,6 +67,13 @@ class UserScenario(BaseModel):
             description="Instructions for the User. This information defines the specific situation the user is in and the tasks they are trying to complete."
         ),
     ]
+    goal_shifts: Annotated[
+        Optional[dict],
+        Field(
+            description="Goal shift configuration for the user simulator. Defines required shifts, goals, and triggers.",
+            default=None,
+        ),
+    ]
 
     def __str__(self) -> str:
         lines = []
@@ -75,6 +82,9 @@ class UserScenario(BaseModel):
             lines.append(textwrap.indent(self.persona, "\t"))
         lines.append("Instructions:")
         lines.append(textwrap.indent(str(self.instructions), "\t"))
+        if self.goal_shifts is not None:
+            lines.append("Goal Shifts:")
+            lines.append(textwrap.indent(str(self.goal_shifts), "\t"))
         return "\n".join(lines)
 
 

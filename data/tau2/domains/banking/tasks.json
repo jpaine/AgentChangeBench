@@ -7,13 +7,17 @@
         "notes": "User begins with a login issue but shifts to querying a transaction and eventually initiating a dispute, requiring multi-tool adaptation."
       },
       "user_scenario": {
-        "persona": "Alex Morgan, a checking account holder with recent transaction activity",
+        "persona": "EASY_1",
         "instructions": {
           "domain": "banking",
           "reason_for_call": "Issues logging in, suspicious card activity",
-          "known_info": "User has a checking account and an active debit card",
+          "known_info": "You are Alex Morgan with phone number 555-123-7890, date of birth 1980-04-15, and email alex.morgan@email.com. You have a checking account and an active debit card.",
           "unknown_info": "Login reason failure, latest transactions, how to dispute",
           "task_instructions": "Assist the user through login issues, then surface recent transactions and resolve a disputed charge."
+        },
+        "goal_shifts": {
+          "required_shifts": 2,
+          "goals": ["authentication", "transactions", "dispute"]
         }
       },
       "ticket": "Customer facing login issues, suspects a fraudulent transaction, wants to dispute it.",
@@ -22,7 +26,9 @@
           "agent_data": null,
           "user_data": {
             "authenticated": false,
-            "has_2fa_enabled": true
+            "has_2fa_enabled": true,
+            "phone_number": "555-123-7890",
+            "customer_id": "cust_001"
           }
         },
         "initialization_actions": [
@@ -30,7 +36,9 @@
             "env_type": "user",
             "func_name": "update_user",
             "arguments": {
-              "authenticated": false
+              "authenticated": false,
+              "phone_number": "555-123-7890",
+              "customer_id": "cust_001"
             }
           }
         ],
