@@ -1,0 +1,615 @@
+{
+  "summary": {
+    "total_tasks": 120,
+    "original_conversions": 14,
+    "systematic_matrix": 105
+  },
+  "by_use_case": {
+    "billpay": [
+      "banking_billpay_easy2_statements_001_converted",
+      "banking_billpay_medium1_security_001_converted",
+      "banking_billpay_easy_1_single_001_systematic",
+      "banking_billpay_easy_1_soft_001_systematic",
+      "banking_billpay_easy_1_hard_001_systematic",
+      "banking_billpay_easy_2_single_001_systematic",
+      "banking_billpay_easy_2_soft_001_systematic",
+      "banking_billpay_easy_2_hard_001_systematic",
+      "banking_billpay_medium_1_single_001_systematic",
+      "banking_billpay_medium_1_soft_001_systematic",
+      "banking_billpay_medium_1_hard_001_systematic",
+      "banking_billpay_medium_2_single_001_systematic",
+      "banking_billpay_medium_2_soft_001_systematic",
+      "banking_billpay_medium_2_hard_001_systematic",
+      "banking_billpay_hard_1_single_001_systematic",
+      "banking_billpay_hard_1_soft_001_systematic",
+      "banking_billpay_hard_1_hard_001_systematic"
+    ],
+    "fraud": [
+      "banking_insights_hard1_fraud_001_converted",
+      "banking_auth_medium1_fraud_001_converted",
+      "banking_fraud_easy1_status_001_converted",
+      "banking_fraud_medium2_security_001_converted",
+      "banking_fraud_easy_1_single_001_systematic",
+      "banking_fraud_easy_1_soft_001_systematic",
+      "banking_fraud_easy_1_hard_001_systematic",
+      "banking_fraud_easy_2_single_001_systematic",
+      "banking_fraud_easy_2_soft_001_systematic",
+      "banking_fraud_easy_2_hard_001_systematic",
+      "banking_fraud_medium_1_single_001_systematic",
+      "banking_fraud_medium_1_soft_001_systematic",
+      "banking_fraud_medium_1_hard_001_systematic",
+      "banking_fraud_medium_2_single_001_systematic",
+      "banking_fraud_medium_2_soft_001_systematic",
+      "banking_fraud_medium_2_hard_001_systematic",
+      "banking_fraud_hard_1_single_001_systematic",
+      "banking_fraud_hard_1_soft_001_systematic",
+      "banking_fraud_hard_1_hard_001_systematic"
+    ],
+    "insights": [
+      "banking_insights_hard1_fraud_001_converted",
+      "banking_insights_easy2_statements_001_converted",
+      "banking_insights_easy_1_single_001_systematic",
+      "banking_insights_easy_1_soft_001_systematic",
+      "banking_insights_easy_1_hard_001_systematic",
+      "banking_insights_easy_2_single_001_systematic",
+      "banking_insights_easy_2_soft_001_systematic",
+      "banking_insights_easy_2_hard_001_systematic",
+      "banking_insights_medium_1_single_001_systematic",
+      "banking_insights_medium_1_soft_001_systematic",
+      "banking_insights_medium_1_hard_001_systematic",
+      "banking_insights_medium_2_single_001_systematic",
+      "banking_insights_medium_2_soft_001_systematic",
+      "banking_insights_medium_2_hard_001_systematic",
+      "banking_insights_hard_1_single_001_systematic",
+      "banking_insights_hard_1_soft_001_systematic",
+      "banking_insights_hard_1_hard_001_systematic"
+    ],
+    "auth": [
+      "banking_auth_medium1_fraud_001_converted",
+      "banking_auth_easy1_balances_001_converted",
+      "banking_auth_easy_1_single_001_systematic",
+      "banking_auth_easy_1_soft_001_systematic",
+      "banking_auth_easy_1_hard_001_systematic",
+      "banking_auth_easy_2_single_001_systematic",
+      "banking_auth_easy_2_soft_001_systematic",
+      "banking_auth_easy_2_hard_001_systematic",
+      "banking_auth_medium_1_single_001_systematic",
+      "banking_auth_medium_1_soft_001_systematic",
+      "banking_auth_medium_1_hard_001_systematic",
+      "banking_auth_medium_2_single_001_systematic",
+      "banking_auth_medium_2_soft_001_systematic",
+      "banking_auth_medium_2_hard_001_systematic",
+      "banking_auth_hard_1_single_001_systematic",
+      "banking_auth_hard_1_soft_001_systematic",
+      "banking_auth_hard_1_hard_001_systematic"
+    ],
+    "account": [
+      "banking_account_medium2_statements_001_converted",
+      "banking_account_hard1_dispute_001_converted",
+      "banking_account_easy_1_single_001_systematic",
+      "banking_account_easy_1_soft_001_systematic",
+      "banking_account_easy_1_hard_001_systematic",
+      "banking_account_easy_2_single_001_systematic",
+      "banking_account_easy_2_soft_001_systematic",
+      "banking_account_easy_2_hard_001_systematic",
+      "banking_account_medium_1_single_001_systematic",
+      "banking_account_medium_1_soft_001_systematic",
+      "banking_account_medium_1_hard_001_systematic",
+      "banking_account_medium_2_single_001_systematic",
+      "banking_account_medium_2_soft_001_systematic",
+      "banking_account_medium_2_hard_001_systematic",
+      "banking_account_hard_1_single_001_systematic",
+      "banking_account_hard_1_soft_001_systematic",
+      "banking_account_hard_1_hard_001_systematic"
+    ],
+    "cards": [
+      "banking_cards_easy2_status_001_converted",
+      "banking_cards_medium1_dispute_001_converted",
+      "banking_cards_easy_1_single_001_systematic",
+      "banking_cards_easy_1_soft_001_systematic",
+      "banking_cards_easy_1_hard_001_systematic",
+      "banking_cards_easy_2_single_001_systematic",
+      "banking_cards_easy_2_soft_001_systematic",
+      "banking_cards_easy_2_hard_001_systematic",
+      "banking_cards_medium_1_single_001_systematic",
+      "banking_cards_medium_1_soft_001_systematic",
+      "banking_cards_medium_1_hard_001_systematic",
+      "banking_cards_medium_2_single_001_systematic",
+      "banking_cards_medium_2_soft_001_systematic",
+      "banking_cards_medium_2_hard_001_systematic",
+      "banking_cards_hard_1_single_001_systematic",
+      "banking_cards_hard_1_soft_001_systematic",
+      "banking_cards_hard_1_hard_001_systematic"
+    ],
+    "transactions": [
+      "banking_transactions_hard1_statements_001_converted",
+      "banking_transactions_medium2_dispute_001_converted",
+      "banking_transactions_easy_1_single_001_systematic",
+      "banking_transactions_easy_1_soft_001_systematic",
+      "banking_transactions_easy_1_hard_001_systematic",
+      "banking_transactions_easy_2_single_001_systematic",
+      "banking_transactions_easy_2_soft_001_systematic",
+      "banking_transactions_easy_2_hard_001_systematic",
+      "banking_transactions_medium_1_single_001_systematic",
+      "banking_transactions_medium_1_soft_001_systematic",
+      "banking_transactions_medium_1_hard_001_systematic",
+      "banking_transactions_medium_2_single_001_systematic",
+      "banking_transactions_medium_2_soft_001_systematic",
+      "banking_transactions_medium_2_hard_001_systematic",
+      "banking_transactions_hard_1_single_001_systematic",
+      "banking_transactions_hard_1_soft_001_systematic",
+      "banking_transactions_hard_1_hard_001_systematic"
+    ]
+  },
+  "by_persona": {
+    "EASY_1": [
+      "goalshift_banking_001",
+      "banking_auth_easy1_balances_001_converted",
+      "banking_fraud_easy1_status_001_converted",
+      "banking_auth_easy_1_single_001_systematic",
+      "banking_auth_easy_1_soft_001_systematic",
+      "banking_auth_easy_1_hard_001_systematic",
+      "banking_account_easy_1_single_001_systematic",
+      "banking_account_easy_1_soft_001_systematic",
+      "banking_account_easy_1_hard_001_systematic",
+      "banking_billpay_easy_1_single_001_systematic",
+      "banking_billpay_easy_1_soft_001_systematic",
+      "banking_billpay_easy_1_hard_001_systematic",
+      "banking_cards_easy_1_single_001_systematic",
+      "banking_cards_easy_1_soft_001_systematic",
+      "banking_cards_easy_1_hard_001_systematic",
+      "banking_fraud_easy_1_single_001_systematic",
+      "banking_fraud_easy_1_soft_001_systematic",
+      "banking_fraud_easy_1_hard_001_systematic",
+      "banking_transactions_easy_1_single_001_systematic",
+      "banking_transactions_easy_1_soft_001_systematic",
+      "banking_transactions_easy_1_hard_001_systematic",
+      "banking_insights_easy_1_single_001_systematic",
+      "banking_insights_easy_1_soft_001_systematic",
+      "banking_insights_easy_1_hard_001_systematic"
+    ],
+    "EASY_2": [
+      "banking_billpay_easy2_statements_001_converted",
+      "banking_cards_easy2_status_001_converted",
+      "banking_insights_easy2_statements_001_converted",
+      "banking_auth_easy_2_single_001_systematic",
+      "banking_auth_easy_2_soft_001_systematic",
+      "banking_auth_easy_2_hard_001_systematic",
+      "banking_account_easy_2_single_001_systematic",
+      "banking_account_easy_2_soft_001_systematic",
+      "banking_account_easy_2_hard_001_systematic",
+      "banking_billpay_easy_2_single_001_systematic",
+      "banking_billpay_easy_2_soft_001_systematic",
+      "banking_billpay_easy_2_hard_001_systematic",
+      "banking_cards_easy_2_single_001_systematic",
+      "banking_cards_easy_2_soft_001_systematic",
+      "banking_cards_easy_2_hard_001_systematic",
+      "banking_fraud_easy_2_single_001_systematic",
+      "banking_fraud_easy_2_soft_001_systematic",
+      "banking_fraud_easy_2_hard_001_systematic",
+      "banking_transactions_easy_2_single_001_systematic",
+      "banking_transactions_easy_2_soft_001_systematic",
+      "banking_transactions_easy_2_hard_001_systematic",
+      "banking_insights_easy_2_single_001_systematic",
+      "banking_insights_easy_2_soft_001_systematic",
+      "banking_insights_easy_2_hard_001_systematic"
+    ],
+    "HARD_1": [
+      "banking_insights_hard1_fraud_001_converted",
+      "banking_account_hard1_dispute_001_converted",
+      "banking_transactions_hard1_statements_001_converted",
+      "banking_auth_hard_1_single_001_systematic",
+      "banking_auth_hard_1_soft_001_systematic",
+      "banking_auth_hard_1_hard_001_systematic",
+      "banking_account_hard_1_single_001_systematic",
+      "banking_account_hard_1_soft_001_systematic",
+      "banking_account_hard_1_hard_001_systematic",
+      "banking_billpay_hard_1_single_001_systematic",
+      "banking_billpay_hard_1_soft_001_systematic",
+      "banking_billpay_hard_1_hard_001_systematic",
+      "banking_cards_hard_1_single_001_systematic",
+      "banking_cards_hard_1_soft_001_systematic",
+      "banking_cards_hard_1_hard_001_systematic",
+      "banking_fraud_hard_1_single_001_systematic",
+      "banking_fraud_hard_1_soft_001_systematic",
+      "banking_fraud_hard_1_hard_001_systematic",
+      "banking_transactions_hard_1_single_001_systematic",
+      "banking_transactions_hard_1_soft_001_systematic",
+      "banking_transactions_hard_1_hard_001_systematic",
+      "banking_insights_hard_1_single_001_systematic",
+      "banking_insights_hard_1_soft_001_systematic",
+      "banking_insights_hard_1_hard_001_systematic"
+    ],
+    "MEDIUM_1": [
+      "banking_auth_medium1_fraud_001_converted",
+      "banking_billpay_medium1_security_001_converted",
+      "banking_cards_medium1_dispute_001_converted",
+      "banking_auth_medium_1_single_001_systematic",
+      "banking_auth_medium_1_soft_001_systematic",
+      "banking_auth_medium_1_hard_001_systematic",
+      "banking_account_medium_1_single_001_systematic",
+      "banking_account_medium_1_soft_001_systematic",
+      "banking_account_medium_1_hard_001_systematic",
+      "banking_billpay_medium_1_single_001_systematic",
+      "banking_billpay_medium_1_soft_001_systematic",
+      "banking_billpay_medium_1_hard_001_systematic",
+      "banking_cards_medium_1_single_001_systematic",
+      "banking_cards_medium_1_soft_001_systematic",
+      "banking_cards_medium_1_hard_001_systematic",
+      "banking_fraud_medium_1_single_001_systematic",
+      "banking_fraud_medium_1_soft_001_systematic",
+      "banking_fraud_medium_1_hard_001_systematic",
+      "banking_transactions_medium_1_single_001_systematic",
+      "banking_transactions_medium_1_soft_001_systematic",
+      "banking_transactions_medium_1_hard_001_systematic",
+      "banking_insights_medium_1_single_001_systematic",
+      "banking_insights_medium_1_soft_001_systematic",
+      "banking_insights_medium_1_hard_001_systematic"
+    ],
+    "MEDIUM_2": [
+      "banking_account_medium2_statements_001_converted",
+      "banking_fraud_medium2_security_001_converted",
+      "banking_transactions_medium2_dispute_001_converted",
+      "banking_auth_medium_2_single_001_systematic",
+      "banking_auth_medium_2_soft_001_systematic",
+      "banking_auth_medium_2_hard_001_systematic",
+      "banking_account_medium_2_single_001_systematic",
+      "banking_account_medium_2_soft_001_systematic",
+      "banking_account_medium_2_hard_001_systematic",
+      "banking_billpay_medium_2_single_001_systematic",
+      "banking_billpay_medium_2_soft_001_systematic",
+      "banking_billpay_medium_2_hard_001_systematic",
+      "banking_cards_medium_2_single_001_systematic",
+      "banking_cards_medium_2_soft_001_systematic",
+      "banking_cards_medium_2_hard_001_systematic",
+      "banking_fraud_medium_2_single_001_systematic",
+      "banking_fraud_medium_2_soft_001_systematic",
+      "banking_fraud_medium_2_hard_001_systematic",
+      "banking_transactions_medium_2_single_001_systematic",
+      "banking_transactions_medium_2_soft_001_systematic",
+      "banking_transactions_medium_2_hard_001_systematic",
+      "banking_insights_medium_2_single_001_systematic",
+      "banking_insights_medium_2_soft_001_systematic",
+      "banking_insights_medium_2_hard_001_systematic"
+    ]
+  },
+  "by_pattern": {
+    "single": [
+      "banking_auth_easy_1_single_001_systematic",
+      "banking_auth_easy_2_single_001_systematic",
+      "banking_auth_medium_1_single_001_systematic",
+      "banking_auth_medium_2_single_001_systematic",
+      "banking_auth_hard_1_single_001_systematic",
+      "banking_account_easy_1_single_001_systematic",
+      "banking_account_easy_2_single_001_systematic",
+      "banking_account_medium_1_single_001_systematic",
+      "banking_account_medium_2_single_001_systematic",
+      "banking_account_hard_1_single_001_systematic",
+      "banking_billpay_easy_1_single_001_systematic",
+      "banking_billpay_easy_2_single_001_systematic",
+      "banking_billpay_medium_1_single_001_systematic",
+      "banking_billpay_medium_2_single_001_systematic",
+      "banking_billpay_hard_1_single_001_systematic",
+      "banking_cards_easy_1_single_001_systematic",
+      "banking_cards_easy_2_single_001_systematic",
+      "banking_cards_medium_1_single_001_systematic",
+      "banking_cards_medium_2_single_001_systematic",
+      "banking_cards_hard_1_single_001_systematic",
+      "banking_fraud_easy_1_single_001_systematic",
+      "banking_fraud_easy_2_single_001_systematic",
+      "banking_fraud_medium_1_single_001_systematic",
+      "banking_fraud_medium_2_single_001_systematic",
+      "banking_fraud_hard_1_single_001_systematic",
+      "banking_transactions_easy_1_single_001_systematic",
+      "banking_transactions_easy_2_single_001_systematic",
+      "banking_transactions_medium_1_single_001_systematic",
+      "banking_transactions_medium_2_single_001_systematic",
+      "banking_transactions_hard_1_single_001_systematic",
+      "banking_insights_easy_1_single_001_systematic",
+      "banking_insights_easy_2_single_001_systematic",
+      "banking_insights_medium_1_single_001_systematic",
+      "banking_insights_medium_2_single_001_systematic",
+      "banking_insights_hard_1_single_001_systematic"
+    ],
+    "soft": [
+      "banking_auth_easy_1_soft_001_systematic",
+      "banking_auth_easy_2_soft_001_systematic",
+      "banking_auth_medium_1_soft_001_systematic",
+      "banking_auth_medium_2_soft_001_systematic",
+      "banking_auth_hard_1_soft_001_systematic",
+      "banking_account_easy_1_soft_001_systematic",
+      "banking_account_easy_2_soft_001_systematic",
+      "banking_account_medium_1_soft_001_systematic",
+      "banking_account_medium_2_soft_001_systematic",
+      "banking_account_hard_1_soft_001_systematic",
+      "banking_billpay_easy_1_soft_001_systematic",
+      "banking_billpay_easy_2_soft_001_systematic",
+      "banking_billpay_medium_1_soft_001_systematic",
+      "banking_billpay_medium_2_soft_001_systematic",
+      "banking_billpay_hard_1_soft_001_systematic",
+      "banking_cards_easy_1_soft_001_systematic",
+      "banking_cards_easy_2_soft_001_systematic",
+      "banking_cards_medium_1_soft_001_systematic",
+      "banking_cards_medium_2_soft_001_systematic",
+      "banking_cards_hard_1_soft_001_systematic",
+      "banking_fraud_easy_1_soft_001_systematic",
+      "banking_fraud_easy_2_soft_001_systematic",
+      "banking_fraud_medium_1_soft_001_systematic",
+      "banking_fraud_medium_2_soft_001_systematic",
+      "banking_fraud_hard_1_soft_001_systematic",
+      "banking_transactions_easy_1_soft_001_systematic",
+      "banking_transactions_easy_2_soft_001_systematic",
+      "banking_transactions_medium_1_soft_001_systematic",
+      "banking_transactions_medium_2_soft_001_systematic",
+      "banking_transactions_hard_1_soft_001_systematic",
+      "banking_insights_easy_1_soft_001_systematic",
+      "banking_insights_easy_2_soft_001_systematic",
+      "banking_insights_medium_1_soft_001_systematic",
+      "banking_insights_medium_2_soft_001_systematic",
+      "banking_insights_hard_1_soft_001_systematic"
+    ],
+    "hard": [
+      "banking_auth_easy_1_hard_001_systematic",
+      "banking_auth_easy_2_hard_001_systematic",
+      "banking_auth_medium_1_hard_001_systematic",
+      "banking_auth_medium_2_hard_001_systematic",
+      "banking_auth_hard_1_single_001_systematic",
+      "banking_auth_hard_1_soft_001_systematic",
+      "banking_auth_hard_1_hard_001_systematic",
+      "banking_account_easy_1_hard_001_systematic",
+      "banking_account_easy_2_hard_001_systematic",
+      "banking_account_medium_1_hard_001_systematic",
+      "banking_account_medium_2_hard_001_systematic",
+      "banking_account_hard_1_single_001_systematic",
+      "banking_account_hard_1_soft_001_systematic",
+      "banking_account_hard_1_hard_001_systematic",
+      "banking_billpay_easy_1_hard_001_systematic",
+      "banking_billpay_easy_2_hard_001_systematic",
+      "banking_billpay_medium_1_hard_001_systematic",
+      "banking_billpay_medium_2_hard_001_systematic",
+      "banking_billpay_hard_1_single_001_systematic",
+      "banking_billpay_hard_1_soft_001_systematic",
+      "banking_billpay_hard_1_hard_001_systematic",
+      "banking_cards_easy_1_hard_001_systematic",
+      "banking_cards_easy_2_hard_001_systematic",
+      "banking_cards_medium_1_hard_001_systematic",
+      "banking_cards_medium_2_hard_001_systematic",
+      "banking_cards_hard_1_single_001_systematic",
+      "banking_cards_hard_1_soft_001_systematic",
+      "banking_cards_hard_1_hard_001_systematic",
+      "banking_fraud_easy_1_hard_001_systematic",
+      "banking_fraud_easy_2_hard_001_systematic",
+      "banking_fraud_medium_1_hard_001_systematic",
+      "banking_fraud_medium_2_hard_001_systematic",
+      "banking_fraud_hard_1_single_001_systematic",
+      "banking_fraud_hard_1_soft_001_systematic",
+      "banking_fraud_hard_1_hard_001_systematic",
+      "banking_transactions_easy_1_hard_001_systematic",
+      "banking_transactions_easy_2_hard_001_systematic",
+      "banking_transactions_medium_1_hard_001_systematic",
+      "banking_transactions_medium_2_hard_001_systematic",
+      "banking_transactions_hard_1_single_001_systematic",
+      "banking_transactions_hard_1_soft_001_systematic",
+      "banking_transactions_hard_1_hard_001_systematic",
+      "banking_insights_easy_1_hard_001_systematic",
+      "banking_insights_easy_2_hard_001_systematic",
+      "banking_insights_medium_1_hard_001_systematic",
+      "banking_insights_medium_2_hard_001_systematic",
+      "banking_insights_hard_1_single_001_systematic",
+      "banking_insights_hard_1_soft_001_systematic",
+      "banking_insights_hard_1_hard_001_systematic"
+    ]
+  },
+  "sample_tasks": [
+    {
+      "id": "banking_auth_easy_1_single_001_systematic",
+      "use_case": "auth",
+      "pattern": "single",
+      "persona": "EASY_1",
+      "goals": [
+        "authentication"
+      ]
+    },
+    {
+      "id": "banking_auth_easy_1_soft_001_systematic",
+      "use_case": "auth",
+      "pattern": "soft",
+      "persona": "EASY_1",
+      "goals": [
+        "authentication",
+        "account_info"
+      ]
+    },
+    {
+      "id": "banking_auth_easy_1_hard_001_systematic",
+      "use_case": "auth",
+      "pattern": "hard",
+      "persona": "EASY_1",
+      "goals": [
+        "authentication",
+        "transactions",
+        "fraud_response"
+      ]
+    },
+    {
+      "id": "banking_account_easy_1_single_001_systematic",
+      "use_case": "account",
+      "pattern": "single",
+      "persona": "EASY_1",
+      "goals": [
+        "account_info"
+      ]
+    },
+    {
+      "id": "banking_account_easy_1_soft_001_systematic",
+      "use_case": "account",
+      "pattern": "soft",
+      "persona": "EASY_1",
+      "goals": [
+        "account_info",
+        "statements"
+      ]
+    },
+    {
+      "id": "banking_account_easy_1_hard_001_systematic",
+      "use_case": "account",
+      "pattern": "hard",
+      "persona": "EASY_1",
+      "goals": [
+        "account_info",
+        "transactions",
+        "dispute"
+      ]
+    },
+    {
+      "id": "banking_billpay_easy_1_single_001_systematic",
+      "use_case": "billpay",
+      "pattern": "single",
+      "persona": "EASY_1",
+      "goals": [
+        "payments"
+      ]
+    },
+    {
+      "id": "banking_billpay_easy_1_soft_001_systematic",
+      "use_case": "billpay",
+      "pattern": "soft",
+      "persona": "EASY_1",
+      "goals": [
+        "payments",
+        "account_info"
+      ]
+    },
+    {
+      "id": "banking_billpay_easy_1_hard_001_systematic",
+      "use_case": "billpay",
+      "pattern": "hard",
+      "persona": "EASY_1",
+      "goals": [
+        "payments",
+        "fraud_response",
+        "cards"
+      ]
+    },
+    {
+      "id": "banking_cards_easy_1_single_001_systematic",
+      "use_case": "cards",
+      "pattern": "single",
+      "persona": "EASY_1",
+      "goals": [
+        "cards"
+      ]
+    },
+    {
+      "id": "banking_cards_easy_1_soft_001_systematic",
+      "use_case": "cards",
+      "pattern": "soft",
+      "persona": "EASY_1",
+      "goals": [
+        "cards",
+        "account_info"
+      ]
+    },
+    {
+      "id": "banking_cards_easy_1_hard_001_systematic",
+      "use_case": "cards",
+      "pattern": "hard",
+      "persona": "EASY_1",
+      "goals": [
+        "cards",
+        "dispute",
+        "fraud_response"
+      ]
+    },
+    {
+      "id": "banking_fraud_easy_1_single_001_systematic",
+      "use_case": "fraud",
+      "pattern": "single",
+      "persona": "EASY_1",
+      "goals": [
+        "dispute"
+      ]
+    },
+    {
+      "id": "banking_fraud_easy_1_soft_001_systematic",
+      "use_case": "fraud",
+      "pattern": "soft",
+      "persona": "EASY_1",
+      "goals": [
+        "dispute",
+        "fraud_response"
+      ]
+    },
+    {
+      "id": "banking_fraud_easy_1_hard_001_systematic",
+      "use_case": "fraud",
+      "pattern": "hard",
+      "persona": "EASY_1",
+      "goals": [
+        "transactions",
+        "dispute",
+        "fraud_response"
+      ]
+    },
+    {
+      "id": "banking_transactions_easy_1_single_001_systematic",
+      "use_case": "transactions",
+      "pattern": "single",
+      "persona": "EASY_1",
+      "goals": [
+        "transactions"
+      ]
+    },
+    {
+      "id": "banking_transactions_easy_1_soft_001_systematic",
+      "use_case": "transactions",
+      "pattern": "soft",
+      "persona": "EASY_1",
+      "goals": [
+        "transactions",
+        "statements"
+      ]
+    },
+    {
+      "id": "banking_transactions_easy_1_hard_001_systematic",
+      "use_case": "transactions",
+      "pattern": "hard",
+      "persona": "EASY_1",
+      "goals": [
+        "transactions",
+        "fraud_response",
+        "cards"
+      ]
+    },
+    {
+      "id": "banking_insights_easy_1_single_001_systematic",
+      "use_case": "insights",
+      "pattern": "single",
+      "persona": "EASY_1",
+      "goals": [
+        "insights"
+      ]
+    },
+    {
+      "id": "banking_insights_easy_1_soft_001_systematic",
+      "use_case": "insights",
+      "pattern": "soft",
+      "persona": "EASY_1",
+      "goals": [
+        "insights",
+        "statements"
+      ]
+    },
+    {
+      "id": "banking_insights_easy_1_hard_001_systematic",
+      "use_case": "insights",
+      "pattern": "hard",
+      "persona": "EASY_1",
+      "goals": [
+        "insights",
+        "fraud_response",
+        "dispute"
+      ]
+    }
+  ]
+}
